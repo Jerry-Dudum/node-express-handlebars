@@ -1,0 +1,9 @@
+<li>
+    {{name}}
+
+    <button class="change-watched" data-id="{{id}}" data-watched="{{watched}}">
+        {{#if watched}}Watched It!{{else}}Didn't watch yet{{/if}}
+    </button>
+
+    <button class="delete-movie" data-id="{{this.id}}">DELETE!</button>
+</li>
