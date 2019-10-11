@@ -1,38 +1,50 @@
-<h1>Movies!</h1>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Watch Da Movie</h1>
+    </div>
+</div>
 
-<h2>Movies that are not watched!</h2>
-
-<ul>
-    {{#each Movies}}
-    {{#unless watched}}
-    {{> Movies/movie-block watched=true}}
-    {{/unless}}
-    {{/each}}
-</ul>
-
-<h2>Movies that are watched!</h2>
-
-<ul>
-    {{#each Movies}}
-    {{#if watched}}
-    {{> Movies/movie-block watched=false}}
-    {{/if}}
-    {{/each}}
-</ul>
-
-<h2>Add a movie</h2>
-<form class="create-form">
-
-    <div class="form-group">
-        <label for="movie">Movie Name:</label>
-        <input type="text" id="ca" name="name">
+<div class="row">
+    <div class="col-6">
+        <p class="h2 text-center">Movies to watch</p>
+        <ul>
+            {{#each Movies}}
+            {{#unless watched}}
+            {{> Movies/movie-block watched=true}}
+            {{/unless}}
+            {{/each}}
+        </ul>
     </div>
 
-    <div class="form-group">
-        <label for="watched">Watched?</label><br>
-        <input type="radio" name="watched" value="1" checked> Not Watched<br>
-        <input type="radio" name="watched" value="0"> Watched
+    <div class="col-6">
+        <p class="h2 text-center">Watched movies</p>
+        <ul>
+            {{#each Movies}}
+            {{#if watched}}
+            {{> Movies/movie-block watched=false}}
+            {{/if}}
+            {{/each}}
+        </ul>
     </div>
+</div>
 
-    <button type="submit">Add movie</button>
-</form>
+<div class="row">
+    <div class="col-12">
+        <h2>Add a movie</h2>
+        <form class="create-form">
+        
+            <div class="form-group">
+                <label for="movie">Movie Name:</label>
+                <input type="text" id="ca" name="name">
+            </div>
+        
+            <div class="form-group">
+                <label for="watched">Watched?</label><br>
+                <input type="radio" name="watched" value="1" checked> Not Watched<br>
+                <input type="radio" name="watched" value="0"> Watched
+            </div>
+        
+            <button type="submit">Add movie</button>
+        </form>
+    </div>
+</div>

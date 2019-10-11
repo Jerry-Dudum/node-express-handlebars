@@ -1,11 +1,3 @@
-DROP DATABASE IF EXISTS movies_db;
-CREATE DATABASE movies_db;
-USE movies_db;
-
-CREATE TABLE movies
-(
-	id int NOT NULL AUTO_INCREMENT,
-	name varchar(255) NOT NULL,
-	watched BOOLEAN DEFAULT false,
-	PRIMARY KEY (id)
-);
+INSERT INTO movies (name, watched) VALUES ('Once Upon a Time in Hollywod', false);
+INSERT INTO movies (name, watched) VALUES ('Eternal Sunshine of the Spotless Mind', false);
+INSERT INTO movies (name, watched) VALUES ('Joker', false);
