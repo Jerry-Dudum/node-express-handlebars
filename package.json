@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/Jerry-Dudum/node-express-handlebars/issues"
   },
-  "homepage": "https://github.com/Jerry-Dudum/node-express-handlebars#readme"
+  "homepage": "https://github.com/Jerry-Dudum/node-express-handlebars#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.17.1"
+  }
 }

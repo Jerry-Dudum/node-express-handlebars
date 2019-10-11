@@ -1,0 +1,41 @@
+h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    color: white;
+    text-shadow:
+        -3px -3px 0 #000,
+		3px -3px 0 #000,
+		-3px 3px 0 #000,
+		3px 3px 0 #000;
+}
+
+.container {
+    text-align: center;
+}
+
+ul {
+    font-family: 'Arvo', serif;
+}
+
+h2 {
+    font-family: 'Arvo', serif;
+}
+
+p {
+    font-family: 'Arvo', serif;
+    font-size: 40px;
+}
+
+#camera {
+    height: auto;
+    width: 100%;
+}
+
+li {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.jumbotron {
+    background-image: url("../images/background.jpg");
+    background-size: 100% 100%;
+}

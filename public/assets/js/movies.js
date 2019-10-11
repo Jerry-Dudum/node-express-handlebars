@@ -2,7 +2,7 @@
 $(function() {
   $(".change-watched").on("click", function(event) {
     var id = $(this).data("id");
-    var newWatched = $(this).data("watched");
+    var newWatched = $(this).data("newwatched");
 
     var newWatchState = {
       watched: newWatched
@@ -14,7 +14,7 @@ $(function() {
       data: newWatchState
     }).then(
       function() {
-        console.log("changed sleep to", newWatch);
+        console.log("changed sleep to", newWatched);
         // Reload the page to get the updated list
         location.reload();
       }
